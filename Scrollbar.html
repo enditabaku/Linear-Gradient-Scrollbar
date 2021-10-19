@@ -1,0 +1,55 @@
+<style>
+    body{
+        background-color: #000;
+    }
+  .using-scrollbar{
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(130deg, rgba(224, 105, 214, 0.308), rgba(97, 126, 97, 0.295) 70%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0, 0, 255, 0.062) 70.71%);
+      width: 150%;
+      height: 100%;
+      overflow-x: scroll;
+   }
+
+    /* width */
+    ::-webkit-scrollbar {
+        height: 18px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(130deg, rgba(224, 105, 214, 0.308), rgba(97, 126, 97, 0.295) 70%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0, 0, 255, 0.062) 70.71%);
+        box-shadow: 
+        0 0 0px rgb(72, 98, 247),
+        0 0 30px rgba(207, 48, 255, 0.637),
+        0 0 60px rgb(240, 13, 183),
+        0 0 100px rgb(150, 0, 62),
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        box-shadow:
+    0 0 7px rgba(255, 255, 255, 0),
+    0 0 10px rgba(255, 255, 255, 0.2),
+    0 0 21px rgba(255, 255, 255, 0.5),
+    0 0 42px rgba(153, 0, 255, 0.5),
+    0 0 82px rgba(212, 0, 255, 0.5),
+    0 0 92px rgba(255, 0, 255, 0.6),
+    0 0 102px rgba(255, 0, 170, 0.6),
+    0 0 151px rgba(255, 0, 149, 0.63);
+    box-decoration-break:clone;
+}
+/*Don't show the white box on top of the scrollbar*/
+    ::-webkit-scrollbar-track{
+        display: none;
+    }
+</style>
+
+<div class='using-scrollbar'></div>
